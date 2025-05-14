@@ -1,4 +1,4 @@
-
+Zenodo DOI: ?
 
 # akdemir-etal_2025_advances_in_applied_energy
 
@@ -25,17 +25,27 @@ To be updated with appropriate reference information once the meta-repository is
 
 ### Input data
 | Dataset | Repository Link | DOI |
-|-------|-----------------|-----|
-| GO and TEP Inputs | https://data.msdlive.org/records/7art3-45280 | https://doi.org/10.57931/2497839 ||
+| --- | --- | --- |
+| GO and TEP Inputs | https://data.msdlive.org/records/7art3-45280 | https://doi.org/10.57931/2497839 |
 
 ### Output data
 | Dataset | Repository Link | DOI |
-|-------|-----------------|-----|
+| --- | --- | --- |
 | GO and TEP Outputs | https://data.msdlive.org/records/7art3-45280 | https://doi.org/10.57931/2497839 |
+| CERF Outputs | https://data.msdlive.org/records/62fpt-0jr75 | https://doi.org/10.57931/2479527 |
+
+### Supplementary data
+All supplementary data can be found in the `supplementary_data` directory. For the external data that's not created by the authors, references are provided in the table below.
+
+| Dataset | Description | Reference |
+| --- | --- | --- |
+|  |  |  |
+|  |  |  |
+|  |  |  |
 
 ## Contributing modeling software
 | Model | Version | Model Repository Link | DOI of Specific Version |
-|-------|---------|-----------------|-----|
+| --- | --- | --- | --- |
 | GO | v0.1.0 | https://github.com/IMMM-SFA/go | https://doi.org/10.5281/zenodo.15399795 |
 | TEP | v1.1.0 | https://github.com/keremakdemir/Transmission_Expansion_Planner | https://doi.org/10.5281/zenodo.15413081 |
 | GCAM-USA | v5.3 | https://github.com/JGCRI/gcam-core | https://doi.org/10.5281/zenodo.3908600 |
@@ -44,6 +54,13 @@ To be updated with appropriate reference information once the meta-repository is
 | reV | v0.7.0 | https://github.com/NREL/reV | https://doi.org/10.5281/zenodo.7301491 |
 
 ## Reproduce my experiment
+Use the scripts found in the `workflow` directory to reproduce the experiment presented in this publication. 
+
+### Steps
+1. ...
+2. ...
+3. ...
+
 Fill in detailed info here or link to other documentation to thoroughly walkthrough how to use the contents of this repository to reproduce your experiment. Below is an example.
 
 
@@ -64,10 +81,18 @@ Fill in detailed info here or link to other documentation to thoroughly walkthro
 | `compare.py` | Script to compare my outputs to the original | `python3 compare.py --orig /path/to/original/data.csv --new /path/to/new/data.csv` |
 
 ## Reproduce my figures
-Use the scripts found in the `figures` directory to reproduce the figures used in this publication.
+Use the scripts found in the `figures` directory to reproduce the figures used in this publication. 
+- Please check and make sure that all the necessary packages listed in `requirements.txt` are installed in your local Python environment.
+- Please update all the paths in the scripts so that they point to the local paths of the downloaded [input](#input-data)/[output](#output-data)/[supplementary](#supplementary-data) datasets. 
+- Setting `t_scenario = cooler` would produce the figures in the main body of the manuscript, whereas setting `t_scenario = hotter` would produce the figures in the supplementary information.
 
-| Figure Number(s) | Script Name | Description | How to Run |
-| --- | --- | --- | --- |
-| 1, 2 | `generate_plot.py` | Description of figure, ie. "Plots the difference between our two scenarios" | `python3 generate_plot.py -input /path/to/inputs -output /path/to/outuptdir` |
-| 3 | `generate_figure.py` | Description of figure, ie. "Shows how the mean and peak differences are calculated" | `python3 generate_figure.py -input /path/to/inputs -output /path/to/outuptdir` |
-
+| Figure Number | Script/File Name | Description |
+| --- | --- | --- |
+| 1 | `Nodal_topology.py` | Plots the 125-nodal topology of GO model and three transmission planning regions of the U.S. Western Interconnection |
+| 2 | `Experiment_flowchart.pptx` | Shows the flowchart of the experimental workflow to simulate grid stress and reliability |
+| 3 | `Grid_futures.py` | Plots the changes in dispatchable generation capacity, renewable generation capacity, storage discharge capacity, intraregional transmission capacity, interregional transmission capacity, and average hourly demand between 2020-2055 |
+| 4 | `Generation_mix.py` | Plots the annual generation mix in U.S. Western Interconnection between 2020-2055 |
+| 5 | `LMP_demand_boxplots.py` | Plots the distributions of daily average LMP and daily average demand for the U.S. Western Interconnection between 2020-2055 |
+| 6 | `LMP_LOL_heatmaps.py` | Plots the yearly average LMP and yearly unserved energy to demand ratio for each U.S. Western Interconnection balancing authority and for each simulation year between 2020-2055 |
+| 7 | `Reasons_for_grid_stress.py` | Plots the demand, available renewable and storage capacities, intraregional and interregional transmission line usage, day of year and hour of day distributions of high LMP and unserved energy events considering all simulation years between 2020-2055 |
+| 8 | `Storage_net_demand_trends.py` | Plots the average hour of day trends of storage capacity utilization and net demand for each simulation year between 2020-2055 |

@@ -1,0 +1,36 @@
+In order to run the models and visualization scripts, you would need to install the following Python packages:
+- numpy
+- pandas
+- geopandas
+- matplotlib
+- shapely
+- seaborn
+- networkx
+- pyyaml
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+- os
+- shutil
+- pathlib
+- sys
+- geopy
+- pyomo
+- datetime
+- openpyxl
+- pyarrow
+- xlrd
+- highspy
+
+Also, in order to initiate the optimization step, you would need to install either open-source (e.g., HiGHS) or commercial (e.g., Gurobi or CPLEX) solvers. This study adopts a fully open-source approach in which the modeling tools, datasets, and the optimization solver we use (HiGHS) are all publicly available and free to use. 
