@@ -35,13 +35,18 @@ To be updated with appropriate reference information once the meta-repository is
 | CERF Outputs | https://data.msdlive.org/records/62fpt-0jr75 | https://doi.org/10.57931/2479527 |
 
 ### Supplementary data
-All supplementary data can be found in the `supplementary_data` directory. For the external data that's not created by the authors, references are provided in the table below.
+All supplementary data can be found in the `supplementary_data` directory.
 
 | Dataset | Description | Reference |
 | --- | --- | --- |
-|  |  |  |
-|  |  |  |
-|  |  |  |
+| BA_Topology_Files/10k_Load.csv | Nodal information including number IDs, names, area names, voltages, angles, locations, and loads within 10000-nodal topology of the U.S. Western Interconnection | [ACTIVSg10k](https://electricgrids.engr.tamu.edu/electric-grid-test-cases/activsg10k/) |
+| BA_Topology_Files/BAs | Names and abbreviations of 28 balancing authorities considered in the U.S. Western Interconnection | Created by authors |
+| BA_Topology_Files/line_params_125.csv | Names, reactances and thermal limits of transmission lines within reduced 125-nodal topology of the U.S. Western Interconnection | Created by authors |
+| BA_Topology_Files/Nodal_information.csv | Number IDs, names, area names, locations, transmission planning regions, and load weights of individual nodes within reduced 125-nodal topology of the U.S. Western Interconnection  | Created by authors |
+| BA_Topology_Files/nodes_to_BA_state.csv | Nodal information including number IDs, names, area names, voltages, angles, locations, loads, geometries, balancing authority and state information within 10000-nodal topology of the U.S. Western Interconnection | [ACTIVSg10k](https://electricgrids.engr.tamu.edu/electric-grid-test-cases/activsg10k/) (Modified by authors) |
+| BA_Topology_Files/selected_nodes_125.csv | Number IDs of the selected nodes within reduced 125-nodal topology of the U.S. Western Interconnection  | Created by authors |
+| Shapefiles/NERC_regions | Folder including shapefile of North American Electric Reliability Corporation (NERC) regions | [HIFLD](https://hifld-geoplatform.hub.arcgis.com/maps/6b2af23c67f04f4cb01d88c61aaf558a) |
+| Shapefiles/US_states | Folder including shapefile of U.S. census states | [U.S. EIA](https://atlas.eia.gov/maps/774019f31f8549c39b5c72f149bbe74e) |
 
 ## Contributing modeling software
 | Model | Version | Model Repository Link | DOI of Specific Version |
@@ -55,6 +60,7 @@ All supplementary data can be found in the `supplementary_data` directory. For t
 
 ## Reproduce my experiment
 Use the scripts found in the `workflow` directory to reproduce the experiment presented in this publication. 
+- Please check and make sure that all the necessary packages listed in `requirements.txt` are installed in your local Python environment.
 
 ### Steps
 1. ...
