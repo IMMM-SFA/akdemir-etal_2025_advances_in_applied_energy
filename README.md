@@ -59,32 +59,29 @@ All supplementary data can be found in the `supplementary_data` directory.
 | reV | v0.7.0 | https://github.com/NREL/reV | https://doi.org/10.5281/zenodo.7301491 |
 
 ## Reproduce my experiment
-Use the scripts found in the `workflow` directory to reproduce the experiment presented in this publication. 
+Use the scripts/files found in the `workflow` directory to reproduce the experiment presented in this publication. 
 - Please check and make sure that all the necessary packages listed in `requirements.txt` are installed in your local Python environment.
+- Please download [input](#input-data)/[output](#output-data)/[supplementary](#supplementary-data) datasets.
+- Please update all the paths in the configuration files and scripts so that they point to the local paths of the downloaded [input](#input-data)/[output](#output-data)/[supplementary](#supplementary-data) datasets.
 
-### Steps
+| Script/File Name | Description |
+| --- | --- |
+| `GO_config.yml` | Configuration file containing paths to the input/output files of GO |
+| `GO_simulation.py` | Script that creates GO model input database and starts GO model simulation |
+| `TEP_config.yml` | Configuration file containing paths to the input/output files and model settings of TEP |
+| `TEP_setup.py` | Script that prepares TEP model input database |
+| `TEP_simulation.py` | Script that starts TEP model simulation |
+
+### Steps of running GO
+1. Example `GO_config.yml` file includes paths to the inputs/outputs for scenario `rcp45cooler_ssp3` and year `2050`. Determine which scenario/year you would like to run and alter the paths in `GO_config.yml` so that they point to the specific [input](#input-data)/[output](#output-data)/[supplementary](#supplementary-data) datasets.
+2. ...
+3. ...
+
+### Steps of running TEP
 1. ...
 2. ...
 3. ...
 
-Fill in detailed info here or link to other documentation to thoroughly walkthrough how to use the contents of this repository to reproduce your experiment. Below is an example.
-
-
-1. Install the software components required to conduct the experiment from [contributing modeling software](#contributing-modeling-software)
-2. Download and install the supporting [input data](#input-data) required to conduct the experiment
-3. Run the following scripts in the `workflow` directory to re-create this experiment:
-
-| Script Name | Description | How to Run |
-| --- | --- | --- |
-| `step_one.py` | Script to run the first part of my experiment | `python3 step_one.py -f /path/to/inputdata/file_one.csv` |
-| `step_two.py` | Script to run the second part of my experiment | `python3 step_two.py -o /path/to/my/outputdir` |
-
-4. Download and unzip the [output data](#output-data) from my experiment 
-5. Run the following scripts in the `workflow` directory to compare my outputs to those from the publication
-
-| Script Name | Description | How to Run |
-| --- | --- | --- |
-| `compare.py` | Script to compare my outputs to the original | `python3 compare.py --orig /path/to/original/data.csv --new /path/to/new/data.csv` |
 
 ## Reproduce my figures
 Use the scripts found in the `figures` directory to reproduce the figures used in this publication. 
