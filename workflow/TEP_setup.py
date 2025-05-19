@@ -310,4 +310,3 @@ def prep_tep(config_file):
 
 #Preparing TEP input database
 prep_tep(my_config_file_path)
-    

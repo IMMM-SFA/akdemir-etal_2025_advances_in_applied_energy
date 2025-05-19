@@ -5,10 +5,10 @@ import sys
 #Defining number of simulation days and path to the config file
 my_config_file_path = "GO_config.yml"
 my_simulation_days = 365
+my_solver_name = "appsi_highs"
 
 
-
-def run_go(config_file_path:str, simulation_days:int):
+def run_go(config_file_path:str, simulation_days:int, solver_name:str):
     """
     Run the GO model with the given configuration file for the indicated number of days.
 
@@ -26,7 +26,7 @@ def run_go(config_file_path:str, simulation_days:int):
         region="west",
         problem="linear",
         complexity="multi",
-        solver_name="appsi_highs",
+        solver_name=solver_name,
         solver_params={
             "solver": "choose",
             "parallel": "on",
@@ -53,4 +53,4 @@ def run_go(config_file_path:str, simulation_days:int):
 
 
 #Starting GO simulation
-run_go(config_file_path = my_config_file_path, simulation_days = my_simulation_days)
+run_go(config_file_path = my_config_file_path, simulation_days = my_simulation_days, solver_name = my_solver_name)

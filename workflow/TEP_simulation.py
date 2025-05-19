@@ -8,6 +8,9 @@ import yaml
 #Defining path to the config file
 my_config_file_path = "TEP_config.yml"
 
+#Defining the solver
+my_solver_name = "appsi_highs"
+
 #Defining yearly transmission investment budget in USD
 Tr_Budget = 4*10**9
 
@@ -19,8 +22,6 @@ Min_Cost = 0.01/Scalar
 
 #Defining unserved energy penalty
 LOL_Penalty = 10000/Scalar
-
-solver = "appsi_highs"
 
 #Defining the number of days in every month
 Days_in_months = np.array([31,28,31,30,31,30,31,31,30,31,30,31])
@@ -281,7 +282,7 @@ Thermal_Gens, Nodes, Lines, Periods, Thermal_Gen_Names, Thermal_Gen_Types, Therm
 ThermalGeneration_Results, SolarGeneration_Results, WindGeneration_Results, OffWindGeneration_Results, HydroGeneration_Results, PowerFlow_Results, UnservedEnergy_Results, VoltageAngle_Results, LineLimit_Results_np = prep_empty_arrays(Num_Periods=Num_Periods, Num_Thermal_Gens=Num_Thermal_Gens, Num_Lines=Num_Lines, Num_Nodes=Num_Nodes)
 
 #Defining solver
-opt = pyo.SolverFactory(solver)
+opt = pyo.SolverFactory(my_solver_name)
 
 m = prep_model(Thermal_Gens, Nodes, Lines, Periods)
 

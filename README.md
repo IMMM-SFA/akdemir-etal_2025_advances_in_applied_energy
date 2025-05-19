@@ -63,6 +63,7 @@ Use the scripts/files found in the `workflow` directory to reproduce the experim
 - Please check and make sure that all the necessary packages listed in `requirements.txt` are installed in your local Python environment.
 - Please download [input](#input-data)/[output](#output-data)/[supplementary](#supplementary-data) datasets.
 - Please update all the paths in the configuration files and scripts so that they point to the local paths of the downloaded [input](#input-data)/[output](#output-data)/[supplementary](#supplementary-data) datasets.
+- By default, transmission network optimization outputs from TEP is fed into GO and used as an input.
 
 | Script/File Name | Description |
 | --- | --- |
@@ -74,18 +75,26 @@ Use the scripts/files found in the `workflow` directory to reproduce the experim
 
 ### Steps of running GO
 1. Example `GO_config.yml` file includes paths to the inputs/outputs for scenario `rcp45cooler_ssp3` and year `2050`. Determine which scenario/year you would like to run and alter the paths in `GO_config.yml` so that they point to the specific [input](#input-data)/[output](#output-data)/[supplementary](#supplementary-data) datasets.
-2. ...
-3. ...
+2. Make sure `my_config_file_path` parameter in `GO_simulation.py` script points to the path of `GO_config.yml` file.
+3. `my_simulation_days` parameter in `GO_simulation.py` script defaults to a full-year. If you need to simulate only a certain part of the year, adjust `my_simulation_days` accordingly.
+4. Change `my_solver_name` parameter in `GO_simulation.py` script so that it matches the solver you would like to use. Make sure that the solver you would like to use can be accessed via [pyomo](https://github.com/Pyomo/pyomo) package.
+5. Run `GO_simulation.py` and analyze/compare the outputs.
+6. Restart from step 1 for every different scenario/year you would like to simulate. 
 
 ### Steps of running TEP
-1. ...
-2. ...
-3. ...
-
+1. Example `TEP_config.yml` file includes paths to the inputs/outputs for scenario `rcp45cooler_ssp3` and year `2050`. Determine which scenario/year you would like to run and alter the paths in `TEP_config.yml` so that they point to the specific [input](#input-data)/[output](#output-data)/[supplementary](#supplementary-data) datasets. Note that `existing_line_param_file` and `existing_line_param_output_file` point to year t-5 to reflect transmission network in previous timestep. 
+2. Please do not change the settings (i.e., last three parameters in `TEP_config.yml`), if you would like to get the same results presented in this paper. 
+3. Make sure `my_config_file_path` parameter in `TEP_setup.py` script points to the path of `TEP_config.yml` file.
+4. Run `TEP_setup.py` to create TEP model input database.
+5. Make sure `my_config_file_path` parameter in `TEP_simulation.py` script points to the path of `TEP_config.yml` file.
+6. Change `my_solver_name` parameter in `TEP_simulation.py` script so that it matches the solver you would like to use. Make sure that the solver you would like to use can be accessed via [pyomo](https://github.com/Pyomo/pyomo) package.
+7. Run `TEP_simulation.py` and analyze/compare the outputs.
+8. Restart from step 1 for every different scenario/year you would like to simulate. 
 
 ## Reproduce my figures
 Use the scripts found in the `figures` directory to reproduce the figures used in this publication. 
 - Please check and make sure that all the necessary packages listed in `requirements.txt` are installed in your local Python environment.
+- Please download [input](#input-data)/[output](#output-data)/[supplementary](#supplementary-data) datasets.
 - Please update all the paths in the scripts so that they point to the local paths of the downloaded [input](#input-data)/[output](#output-data)/[supplementary](#supplementary-data) datasets. 
 - Setting `t_scenario = cooler` would produce the figures in the main body of the manuscript, whereas setting `t_scenario = hotter` would produce the figures in the supplementary information.
 
