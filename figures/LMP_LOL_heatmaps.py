@@ -14,7 +14,7 @@ import matplotlib.ticker as mticker
 
 ##########################################
 years = [2020, 2025, 2030, 2035, 2040, 2045, 2050, 2055]
-t_scenario = 'hotter'
+t_scenario = 'cooler'
 run_name = 'run_110824'
 scenarios = [f'rcp45{t_scenario}_ssp3', f'rcp85{t_scenario}_ssp3', f'rcp45{t_scenario}_ssp5', f'rcp85{t_scenario}_ssp5']
 percentile = 99

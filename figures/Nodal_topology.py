@@ -87,13 +87,13 @@ ax.axis('off')
 
 #Creating a custom legend
 handles = []
-patch1 = Patch(facecolor='#7C858D', edgecolor='black',label='CAISO',linewidth=0.5)
+patch1 = Patch(facecolor='#7C858D', edgecolor='black',label='California Independent\nSystem Operator',linewidth=0.5)
 patch2 = Patch(facecolor='#ADB5BD', edgecolor='black',label='NorthernGrid',linewidth=0.5)
 patch3 = Patch(facecolor='#DCE0E5', edgecolor='black',label='WestConnect',linewidth=0.5)
 line1 = Line2D([0], [0], label='Transmission Lines', color='black')
 dot1 = Line2D([0], [0], label='Nodes', color='white', marker='o',linestyle='', markeredgecolor='black',markeredgewidth=0.2, markersize=6)
 handles.extend([patch1,patch2,patch3,dot1,line1])
-fig.legend(handles=handles,loc='center left', bbox_to_anchor=(0.77, 0.5), ncol=1, fontsize=10)
+fig.legend(handles=handles,loc='center left', bbox_to_anchor=(0.77, 0.5), ncol=1, fontsize=9)
 
 #Saving the figure
 plt.savefig('Nodal_topology.png',dpi=350, bbox_inches='tight')

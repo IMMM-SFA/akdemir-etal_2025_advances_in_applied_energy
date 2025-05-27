@@ -114,7 +114,8 @@ ax4_in2 = inset_axes(ax4, width=inner_axis_width_2, height=inner_axis_height_2, 
 ############## Plotting renewable curtailment and storage decision trends ##############
 
 # colors = ['#D0F0C0', '#B2E0A5', '#95D089', '#77C06E', '#59B052', '#3BA037', '#1E901B', '#008000']
-colors = ['#E9F6E5', '#C8DEC9', '#A6C6AC', '#85AE90', '#649674', '#437E58', '#21663B', '#004E1F']
+# colors = ['#E9F6E5', '#C8DEC9', '#A6C6AC', '#85AE90', '#649674', '#437E58', '#21663B', '#004E1F']
+colors = ['#D0F0C0', '#B2D9A9', '#95C292', '#77AB7B', '#599364', '#3B7C4D', '#1E6536', '#004E1F']
 
 for idx, sc in enumerate(scenarios):
 

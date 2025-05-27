@@ -100,8 +100,8 @@ Use the scripts found in the `figures` directory to reproduce the figures used i
 
 | Figure Number | Script/File Name | Description |
 | --- | --- | --- |
-| 1 | `Nodal_topology.py` | Plots the 125-nodal topology of GO model and three transmission planning regions of the U.S. Western Interconnection |
-| 2 | `Experiment_flowchart.pptx` | Shows the flowchart of the experimental workflow to simulate grid stress and reliability |
+| 1 | `Experiment_flowchart.pptx` | Shows the flowchart of the modeling chain to simulate grid stress and reliability between 2020 and 2055 |
+| 2 | `Nodal_topology.py` | Plots the 125-nodal topology of GO model and three transmission planning regions of the U.S. Western Interconnection |
 | 3 | `Grid_futures.py` | Plots the changes in dispatchable generation capacity, renewable generation capacity, storage discharge capacity, intraregional transmission capacity, interregional transmission capacity, and average hourly demand between 2020-2055 |
 | 4 | `Generation_mix.py` | Plots the annual generation mix in U.S. Western Interconnection between 2020-2055 |
 | 5 | `LMP_demand_boxplots.py` | Plots the distributions of daily average LMP and daily average demand for the U.S. Western Interconnection between 2020-2055 |
