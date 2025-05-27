@@ -1,5 +1,3 @@
-Zenodo DOI: ?
-
 # akdemir-etal_2025_advances_in_applied_energy
 
 **Grid Stress and Reliability in Future Electricity Grids: Impacts of Generation Mix, Weather, and Demand Growth**
