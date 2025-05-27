@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15530297.svg)](https://doi.org/10.5281/zenodo.15530297)
+
 # akdemir-etal_2025_advances_in_applied_energy
 
 **Grid Stress and Reliability in Future Electricity Grids: Impacts of Generation Mix, Weather, and Demand Growth**
@@ -17,7 +19,7 @@ The reliability of power grids in the future will depend on how system planners 
 To be updated with appropriate reference information once the paper is published.
 
 ## Code reference
-To be updated with appropriate reference information once the meta-repository is published.
+Akdemir, K. Z., Mongird, K., Bracken, C., Burleyson, C. D., Kern, J. D., Oikonomou, K., Thurber, T. B., Vernon, C. R., Voisin, N., Zhao, M., & Rice, J. S. (2025). Meta-repository for data and code associated with the Akdemir et al. 2025 submission to Advances in Applied Energy (Version v1.0.0) [Computer software]. Zenodo. https://doi.org/10.5281/ZENODO.15530297
 
 ## Data reference
 
