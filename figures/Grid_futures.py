@@ -82,21 +82,21 @@ scenario_colors = ['#8BA5E9', '#C7D5EE', '#EACDBE', '#DD8E78']
 
 for idx, sc in enumerate(scenarios):
 
-    if (sc == 'rcp45hotter_ssp5') or (sc == 'rcp45cooler_ssp5'):
-        sc_leg = 'RCP 4.5/SSP 5'
-    elif (sc == 'rcp85hotter_ssp5') or (sc == 'rcp85cooler_ssp5'):
-        sc_leg = 'RCP 8.5/SSP 5'
-    elif (sc == 'rcp45hotter_ssp3') or (sc == 'rcp45cooler_ssp3'):
-        sc_leg = 'RCP 4.5/SSP 3'
-    elif (sc == 'rcp85hotter_ssp3') or (sc == 'rcp85cooler_ssp3'):
-        sc_leg = 'RCP 8.5/SSP 3'
+    # if (sc == 'rcp45hotter_ssp5') or (sc == 'rcp45cooler_ssp5'):
+    #     sc_leg = 'RCP 4.5/SSP 5'
+    # elif (sc == 'rcp85hotter_ssp5') or (sc == 'rcp85cooler_ssp5'):
+    #     sc_leg = 'RCP 8.5/SSP 5'
+    # elif (sc == 'rcp45hotter_ssp3') or (sc == 'rcp45cooler_ssp3'):
+    #     sc_leg = 'RCP 4.5/SSP 3'
+    # elif (sc == 'rcp85hotter_ssp3') or (sc == 'rcp85cooler_ssp3'):
+    #     sc_leg = 'RCP 8.5/SSP 3'
 
-    ax[0,0].plot(years, globals()[f'Dispatchable_GenCap_{sc}'], label=sc_leg, color=scenario_colors[idx])
-    ax[0,1].plot(years, globals()[f'Renewable_GenCap_{sc}'], label=sc_leg, color=scenario_colors[idx])
-    ax[0,2].plot(years, globals()[f'Storage_Cap_{sc}'], label=sc_leg, color=scenario_colors[idx])
-    ax[1,0].plot(years, globals()[f'Intraregional_Transmission_Cap_{sc}'], label=sc_leg, color=scenario_colors[idx])
-    ax[1,1].plot(years, globals()[f'Interregional_Transmission_Cap_{sc}'], label=sc_leg, color=scenario_colors[idx])
-    ax[1,2].plot(years, globals()[f'Average_Demand_{sc}'], label=sc_leg, color=scenario_colors[idx])
+    ax[0,0].plot(years, globals()[f'Dispatchable_GenCap_{sc}'], label=sc, color=scenario_colors[idx])
+    ax[0,1].plot(years, globals()[f'Renewable_GenCap_{sc}'], label=sc, color=scenario_colors[idx])
+    ax[0,2].plot(years, globals()[f'Storage_Cap_{sc}'], label=sc, color=scenario_colors[idx])
+    ax[1,0].plot(years, globals()[f'Intraregional_Transmission_Cap_{sc}'], label=sc, color=scenario_colors[idx])
+    ax[1,1].plot(years, globals()[f'Interregional_Transmission_Cap_{sc}'], label=sc, color=scenario_colors[idx])
+    ax[1,2].plot(years, globals()[f'Average_Demand_{sc}'], label=sc, color=scenario_colors[idx])
 
 ax[0,0].set_ylabel('Dispatchable Generation Capacity (GW)', weight='bold', fontsize=12.5)
 ax[0,1].set_ylabel('Renewable Generation Capacity (GW)', weight='bold', fontsize=12.5)

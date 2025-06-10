@@ -57,23 +57,23 @@ for sc in scenarios:
 for sc in scenarios:
     for year in years:
 
-        if (sc == 'rcp45hotter_ssp5') or (sc == 'rcp45cooler_ssp5'):
-            sc_leg = 'RCP 4.5/SSP 5'
-        elif (sc == 'rcp85hotter_ssp5') or (sc == 'rcp85cooler_ssp5'):
-            sc_leg = 'RCP 8.5/SSP 5'
-        elif (sc == 'rcp45hotter_ssp3') or (sc == 'rcp45cooler_ssp3'):
-            sc_leg = 'RCP 4.5/SSP 3'
-        elif (sc == 'rcp85hotter_ssp3') or (sc == 'rcp85cooler_ssp3'):
-            sc_leg = 'RCP 8.5/SSP 3'
+        # if (sc == 'rcp45hotter_ssp5') or (sc == 'rcp45cooler_ssp5'):
+        #     sc_leg = 'RCP 4.5/SSP 5'
+        # elif (sc == 'rcp85hotter_ssp5') or (sc == 'rcp85cooler_ssp5'):
+        #     sc_leg = 'RCP 8.5/SSP 5'
+        # elif (sc == 'rcp45hotter_ssp3') or (sc == 'rcp45cooler_ssp3'):
+        #     sc_leg = 'RCP 4.5/SSP 3'
+        # elif (sc == 'rcp85hotter_ssp3') or (sc == 'rcp85cooler_ssp3'):
+        #     sc_leg = 'RCP 8.5/SSP 3'
 
-        globals()[f'Hourly_LMP_{sc}_{year}']['Scenario'] = np.repeat(sc_leg, len(hourly_timestamp))
+        globals()[f'Hourly_LMP_{sc}_{year}']['Scenario'] = np.repeat(sc, len(hourly_timestamp))
         globals()[f'Hourly_LMP_{sc}_{year}']['Year'] = np.repeat(year, len(hourly_timestamp))
-        globals()[f'Daily_LMP_{sc}_{year}']['Scenario'] = np.repeat(sc_leg, len(daily_timestamp))
+        globals()[f'Daily_LMP_{sc}_{year}']['Scenario'] = np.repeat(sc, len(daily_timestamp))
         globals()[f'Daily_LMP_{sc}_{year}']['Year'] = np.repeat(year, len(daily_timestamp))
 
-        globals()[f'Hourly_Load_{sc}_{year}']['Scenario'] = np.repeat(sc_leg, len(hourly_timestamp))
+        globals()[f'Hourly_Load_{sc}_{year}']['Scenario'] = np.repeat(sc, len(hourly_timestamp))
         globals()[f'Hourly_Load_{sc}_{year}']['Year'] = np.repeat(year, len(hourly_timestamp))
-        globals()[f'Daily_Load_{sc}_{year}']['Scenario'] = np.repeat(sc_leg, len(daily_timestamp))
+        globals()[f'Daily_Load_{sc}_{year}']['Scenario'] = np.repeat(sc, len(daily_timestamp))
         globals()[f'Daily_Load_{sc}_{year}']['Year'] = np.repeat(year, len(daily_timestamp))
 
         if (sc == scenarios[0]) and (year == years[0]):
