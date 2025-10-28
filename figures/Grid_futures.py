@@ -134,6 +134,6 @@ ax[1,1].legend(loc='upper left', frameon=True, framealpha=1)
 ax[1,2].legend(loc='upper left', frameon=True, framealpha=1)
 
 plt.tight_layout()
-plt.savefig(f'Generation_transmission_demand_storage_change_{t_scenario}_scenarios.png', dpi=300, bbox_inches='tight')
+plt.savefig(f'Generation_transmission_demand_storage_change_{t_scenario}_scenarios.png', dpi=500, bbox_inches='tight')
 plt.show()
 plt.clf()

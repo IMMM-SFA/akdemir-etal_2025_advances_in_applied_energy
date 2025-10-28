@@ -158,7 +158,7 @@ for idx, sc in enumerate(scenarios):
 
     sns.heatmap(globals()[f'Yearly_LOL_{sc}']/globals()[f'Yearly_Demand_{sc}']*100, ax=globals()[f'ax{idx+1}_in2'], cmap=cmap2, cbar=True, linewidths=.5 ,cbar_kws={'shrink':0.4, 'label':'Yearly Unserved Energy\nto Demand Ratio (%)', 'anchor':(0.4,0.21),'ticks':[0,0.02,0.05,0.1,0.25,0.5,1],'format':mticker.FixedFormatter(['0','0.02','0.05','0.1','0.25','0.5','1'])}, norm=norm2)
 
-plt.savefig(f'Mean_LMP_heatmaps_{t_scenario}_scenarios.png', dpi=500, bbox_inches='tight')
+plt.savefig(f'Mean_LMP_heatmaps_{t_scenario}_scenarios.png', dpi=600, bbox_inches='tight')
 plt.show()
 plt.clf()
 
@@ -224,7 +224,7 @@ for idx, sc in enumerate(scenarios):
 
     sns.heatmap(globals()[f'Yearly_LOL_{sc}']/globals()[f'Yearly_Demand_{sc}']*100, ax=globals()[f'ax{idx+1}_in2'], cmap=cmap2, cbar=True, linewidths=.5 ,cbar_kws={'shrink':0.4, 'label':'Yearly Unserved Energy\nto Demand Ratio (%)', 'anchor':(0.4,0.21),'ticks':[0,0.02,0.05,0.1,0.25,0.5,1],'format':mticker.FixedFormatter(['0','0.02','0.05','0.1','0.25','0.5','1'])}, norm=norm2)
 
-plt.savefig(f'Max_LMP_heatmaps_{t_scenario}_scenarios.png', dpi=500, bbox_inches='tight')
+plt.savefig(f'Max_LMP_heatmaps_{t_scenario}_scenarios.png', dpi=600, bbox_inches='tight')
 plt.show()
 plt.clf()
 
@@ -290,7 +290,7 @@ for idx, sc in enumerate(scenarios):
 
     sns.heatmap(globals()[f'Yearly_LOL_{sc}']/globals()[f'Yearly_Demand_{sc}']*100, ax=globals()[f'ax{idx+1}_in2'], cmap=cmap2, cbar=True, linewidths=.5 ,cbar_kws={'shrink':0.4, 'label':'Yearly Unserved Energy\nto Demand Ratio (%)', 'anchor':(0.4,0.21),'ticks':[0,0.02,0.05,0.1,0.25,0.5,1],'format':mticker.FixedFormatter(['0','0.02','0.05','0.1','0.25','0.5','1'])}, norm=norm2)
 
-plt.savefig(f'Median_LMP_heatmaps_{t_scenario}_scenarios.png', dpi=500, bbox_inches='tight')
+plt.savefig(f'Median_LMP_heatmaps_{t_scenario}_scenarios.png', dpi=600, bbox_inches='tight')
 plt.show()
 plt.clf()
 
@@ -356,7 +356,7 @@ for idx, sc in enumerate(scenarios):
 
     sns.heatmap(globals()[f'Yearly_LOL_{sc}']/globals()[f'Yearly_Demand_{sc}']*100, ax=globals()[f'ax{idx+1}_in2'], cmap=cmap2, cbar=True, linewidths=.5 ,cbar_kws={'shrink':0.4, 'label':'Yearly Unserved Energy\nto Demand Ratio (%)', 'anchor':(0.4,0.21),'ticks':[0,0.02,0.05,0.1,0.25,0.5,1],'format':mticker.FixedFormatter(['0','0.02','0.05','0.1','0.25','0.5','1'])}, norm=norm2)
 
-plt.savefig(f'Deviation_LMP_heatmaps_{t_scenario}_scenarios.png', dpi=500, bbox_inches='tight')
+plt.savefig(f'Deviation_LMP_heatmaps_{t_scenario}_scenarios.png', dpi=600, bbox_inches='tight')
 plt.show()
 plt.clf()
 
@@ -422,6 +422,6 @@ for idx, sc in enumerate(scenarios):
 
     sns.heatmap(globals()[f'Yearly_LOL_{sc}']/globals()[f'Yearly_Demand_{sc}']*100, ax=globals()[f'ax{idx+1}_in2'], cmap=cmap2, cbar=True, linewidths=.5 ,cbar_kws={'shrink':0.4, 'label':'Yearly Unserved Energy\nto Demand Ratio (%)', 'anchor':(0.4,0.21),'ticks':[0,0.02,0.05,0.1,0.25,0.5,1],'format':mticker.FixedFormatter(['0','0.02','0.05','0.1','0.25','0.5','1'])}, norm=norm2)
 
-plt.savefig(f'Percentile_LMP_heatmaps_{t_scenario}_scenarios.png', dpi=500, bbox_inches='tight')
+plt.savefig(f'Percentile_LMP_heatmaps_{t_scenario}_scenarios.png', dpi=600, bbox_inches='tight')
 plt.show()
 plt.clf()

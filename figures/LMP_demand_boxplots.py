@@ -147,7 +147,7 @@ ax[2].legend(loc='upper left', ncol=1, fontsize=15)
 
 fig.subplots_adjust(hspace=0.1)
 
-plt.savefig(f'LMP_Demand_WECC_Boxplot_{t_scenario}_scenarios.png', dpi=400, bbox_inches='tight')
+plt.savefig(f'LMP_Demand_WECC_Boxplot_{t_scenario}_scenarios.png', dpi=550, bbox_inches='tight')
 plt.show()
 plt.clf()
 

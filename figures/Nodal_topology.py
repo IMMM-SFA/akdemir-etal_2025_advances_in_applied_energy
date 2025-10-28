@@ -96,4 +96,4 @@ handles.extend([patch1,patch2,patch3,dot1,line1])
 fig.legend(handles=handles,loc='center left', bbox_to_anchor=(0.77, 0.5), ncol=1, fontsize=9)
 
 #Saving the figure
-plt.savefig('Nodal_topology.png',dpi=350, bbox_inches='tight')
+plt.savefig('Nodal_topology.png',dpi=500, bbox_inches='tight')

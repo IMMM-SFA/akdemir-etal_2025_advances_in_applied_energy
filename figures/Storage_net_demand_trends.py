@@ -145,6 +145,6 @@ for idx, sc in enumerate(scenarios):
 
     globals()[f'ax{idx+1}_in1'].legend(loc='upper left', ncol=2, fontsize=12, frameon=True, framealpha=1)
 
-plt.savefig(f'Storage_netdemand_trends_{t_scenario}_scenarios.png', dpi=300, bbox_inches='tight')
+plt.savefig(f'Storage_netdemand_trends_{t_scenario}_scenarios.png', dpi=500, bbox_inches='tight')
 plt.show()
 plt.clf()

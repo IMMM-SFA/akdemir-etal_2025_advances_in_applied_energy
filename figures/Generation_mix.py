@@ -150,6 +150,6 @@ for idx, sc in enumerate(scenarios):
 
     globals()[f'ax{idx+1}_in1'].legend(handles=handles,loc='center', bbox_to_anchor=(0.5, -0.25), ncol=6, fontsize=9.5)
 
-plt.savefig(f'Generation_mix_{t_scenario}_scenarios.png', dpi=400, bbox_inches='tight')
+plt.savefig(f'Generation_mix_{t_scenario}_scenarios.png', dpi=500, bbox_inches='tight')
 plt.show()
 plt.clf()

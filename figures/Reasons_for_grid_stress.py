@@ -327,7 +327,7 @@ for idx, sc in enumerate(scenarios):
     globals()[f'ax{idx+1}_in3'].tick_params(axis='both', which='both', pad=0.01)
     
 
-plt.savefig(f'Grid_stress_reasons_{t_scenario}_scenarios_all_together.png', dpi=400, bbox_inches='tight')
+plt.savefig(f'Grid_stress_reasons_{t_scenario}_scenarios_all_together.png', dpi=600, bbox_inches='tight')
 plt.show()
 plt.clf()
 
