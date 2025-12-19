@@ -1,4 +1,4 @@
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15530297.svg)](https://doi.org/10.5281/zenodo.15530297)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17981353.svg)](https://doi.org/10.5281/zenodo.17981353)
 
 # akdemir-etal_2025_advances_in_applied_energy
 
@@ -19,7 +19,7 @@ The reliability of power grids in the future will depend on how system planners 
 Akdemir, K. Z., Mongird, K., Bracken, C., Burleyson, C. D., Kern, J. D., Oikonomou, K., Thurber, T. B., Vernon, C. R., Voisin, N., Zhao, M., & Rice, J. S. (2025). Evaluating grid stress and reliability in future electricity grids across a range of demand, generation mix, and weather trends. Advances in Applied Energy, 20, 100249. https://doi.org/10.1016/j.adapen.2025.100249
 
 ## Code reference
-Akdemir, K. Z., Mongird, K., Bracken, C., Burleyson, C. D., Kern, J. D., Oikonomou, K., Thurber, T. B., Vernon, C. R., Voisin, N., Zhao, M., & Rice, J. S. (2025). Meta-repository for data and code associated with the Akdemir et al. 2025 submission to Advances in Applied Energy (Version v1.0.0) [Computer software]. Zenodo. https://doi.org/10.5281/ZENODO.15530297
+Akdemir, K. Z., Mongird, K., Bracken, C., Burleyson, C. D., Kern, J. D., Oikonomou, K., Thurber, T. B., Vernon, C. R., Voisin, N., Zhao, M., & Rice, J. S. (2025). Meta-repository for data and code associated with the Akdemir et al. 2025 submission to Advances in Applied Energy (Version v1.1.0) [Computer software]. Zenodo. https://doi.org/10.5281/zenodo.17981353
 
 ## Data reference
 
